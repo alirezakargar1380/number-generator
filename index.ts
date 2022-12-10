@@ -1,11 +1,10 @@
-function all_possible_nums(inputParamsValues: { [index: string]: any } = {}, allPossibleNumbers: Array<number> = [], paramCombinationNames?: Array<any>, paramsCombinations?: { [index: string]: string }, permuted?: Array<any>) {
+export default function all_possible_nums(inputParamsValues: { [index: string]: any } = {}, allPossibleNumbers: Array<number> = [], paramCombinationNames?: Array<any>, paramsCombinations?: { [index: string]: string }, permuted?: Array<any>): Array<number> {
   // Store the original list of parameter names to permute
   if (!paramCombinationNames) { paramCombinationNames = Object.keys(inputParamsValues); }
   if (!paramsCombinations) { paramsCombinations = {}; }
 
   // Initialize an empty set of permutations
   if (!permuted) {
-    // console.log(' + Permuting params values from input params values: ', inputParamsValues);
     permuted = [];
   }
 
@@ -58,16 +57,3 @@ function all_possible_nums(inputParamsValues: { [index: string]: any } = {}, all
   }
   return allPossibleNumbers
 }
-
-all_possible_nums({
-  "one": [1],
-  "two": [1, 2, 3, 4, 5, 6, 7, 8, 9],
-  "three": [1]
-},)
-let p = all_possible_nums({
-  "one": [1,8],
-  "two": [1, 2, 3, 4, 5, 6, 7, 8, 9],
-  "three": [1]
-})
-
-console.log(p)

@@ -1,11 +1,26 @@
 {
-  "name": "number-generator",
-  "version": "1.0.0",
-  "description": "with this package you can get All multi-digit number values",
+  "name": "possible-numbers",
+  "version": "1.0.4",
+  "description": "with this package you can generate All possible numbers with specific length",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "alireza kargar",
-  "license": "ISC"
+  "license": "ISC",
+  "homepage": "https://github.com/alirezakargar1380/possible-numbers",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alirezakargar1380/possible-numbers"
+  },
+  "files": [
+    "index.ts",
+    "README.md"
+  ],
+  "keywords": [
+    "numbers",
+    "generator",
+    "combitions",
+    "permuted"
+  ],
+  "author": "alireza kargar <alirezakargarsuprort@gmail.com>"
 }
